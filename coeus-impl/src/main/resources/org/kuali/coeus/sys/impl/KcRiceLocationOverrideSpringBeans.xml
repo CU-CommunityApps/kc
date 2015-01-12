@@ -29,8 +29,6 @@
         <property name="namespaceCode" value="KR-LOC"/>
         <property name="dataSourceName" value="locationDataSource"/>
         <property name="initializeDataDictionary" value="true"/>
-        <property name="dataDictionaryService" ref="dataDictionaryService"/>
-        <property name="persistenceService" ref="persistenceServiceOjb"/>
         <property name="dataDictionaryPackages">
             <list>
                 <value>classpath:org/kuali/rice/location/web/campus/Campus.xml</value>
@@ -75,12 +73,6 @@
                 <entry key="org.kuali.rice.location.framework.campus.CampusTypeEbo"
                        value="org.kuali.rice.location.impl.campus.CampusTypeBo"/>
             </map>
-        </property>
-        <property name="providers">
-            <list>
-                <ref bean="jpaPersistenceProvider"/>
-                <ref bean="metadataProvider"/>
-            </list>
         </property>
     </bean>
 
